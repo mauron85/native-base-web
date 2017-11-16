@@ -47,7 +47,7 @@
       "Fonts"
     ]
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Chion82/native-base-web.git"
