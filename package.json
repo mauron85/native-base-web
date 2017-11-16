@@ -1,0 +1,55 @@
+{
+  "name": "native-base-web",
+  "description": "NativeBase for react-native-web",
+  "author": "Chion82",
+  "keywords": [
+    "android",
+    "ios",
+    "react",
+    "native",
+    "react-native",
+    "native-modules",
+    "react-component",
+    "navbar",
+    "packager",
+    "rnpm"
+  ],
+  "version": "0.0.4",
+  "private": false,
+  "scripts": {
+    "build": "del ./lib && babel . -d lib --ignore node_modules"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react-icons": "^2.2.1",
+    "clamp": "^1.0.1",
+    "color": "^2.0.1",
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "peerDependencies": {
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0",
+    "react-native-web-extended": "0.0.7"
+  },
+  "rnpm": {
+    "assets": [
+      "Fonts"
+    ]
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Chion82/native-base-web.git"
+  }
+}
