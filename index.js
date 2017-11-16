@@ -3,7 +3,11 @@
 
 import Drawer from './Components/vendor/react-native-drawer';
 import Header from './Components/Widgets/Header';
+import Left from './Components/Widgets/Left';
+import Body from './Components/Widgets/Body';
+import Right from './Components/Widgets/Right';
 import Footer from './Components/Widgets/Footer';
+import FooterTab from './Components/Widgets/FooterTab';
 import Title from './Components/Widgets/Title';
 import Container from './Components/Widgets/Container';
 import Content from './Components/Widgets/Content';
@@ -20,6 +24,8 @@ import H1 from './Components/Widgets/H1';
 import H2 from './Components/Widgets/H2';
 import H3 from './Components/Widgets/H3';
 import View from './Components/Widgets/View';
+import Form from './Components/Widgets/Form';
+import Item from './Components/Widgets/Item';
 import Input from './Components/Widgets/Input';
 import Textarea from './Components/Widgets/Textarea';
 import InputGroup from './Components/Widgets/InputGroup';
@@ -50,7 +56,11 @@ console.error = function() {
 
 module.exports = {
 	Header: Header,
+	Left: Left,
+	Body: Body,
+	Right: Right,
 	Footer: Footer,
+	FooterTab: FooterTab,
 	Title: Title,
 	Container: Container,
 	Content: Content,
@@ -68,6 +78,8 @@ module.exports = {
 	Row: Row,
 	Col: Col,
 	Grid: Grid,
+	Form: Form,
+	Item: Item,
 	InputGroup: InputGroup,
 	Input: Input,
 	Textarea: Textarea,
@@ -85,5 +97,5 @@ module.exports = {
 	Tabs : ScrollableTabView,
   TouchableOpacityScrollable : TouchableOpacityScrollable,
   //Utils
-  OSTheme: Platform
+	OSTheme: Platform
 };

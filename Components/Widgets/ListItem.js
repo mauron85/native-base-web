@@ -1,6 +1,5 @@
-'use strict';
-
 /* @flow */
+'use strict';
 import PropTypes from 'prop-types';
 
 import React from 'react';
@@ -337,6 +336,14 @@ export default class ListItemNB extends NativeBaseComponent {
     }
 
     renderChildren() {
+        return this.renderChildren20();
+    }
+
+    renderChildren20() {
+        return <View>{this.props.children}</View>;
+    }
+
+    renderChildren10() {
 
         var newChildren = [];
         if(!Array.isArray(this.props.children) && !this.inlinePresent() && !this.stackedPresent() && !this.insetPresent()) {

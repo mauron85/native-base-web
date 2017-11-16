@@ -20,12 +20,11 @@ export default class Container extends NativeBaseComponent {
   }
 
   isHeaderPresent() {
-    let headerPresent = false;
-    React.Children.forEach(this.props.children, function (child) {
-      if(child.type == Header)
-          headerPresent = true;
+    const children = React.Children.toArray(this.props.children);
+    const header = children.find(function (child) {
+      return child.type == Header;
     })
-    return headerPresent;
+    return !!header;
   }
 
   renderHeader() {
@@ -120,13 +119,11 @@ export default class Container extends NativeBaseComponent {
     return(
       <View {...this.prepareRootProps()}>
 
-        <View>
-          {this.renderHeader()}
-        </View>
-
+        {this.renderHeader()}
 
         <View style={{
               flex:1,
+              zIndex: 2, // ensure it's lower then zIndex of Header othervise header buttons will not be clickable
               paddingTop : this.isHeaderPresent() ? this.getTheme().toolbarHeight : 0
             }}>
           {this.renderContent()}

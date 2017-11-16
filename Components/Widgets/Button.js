@@ -31,7 +31,8 @@ export default class Button extends NativeBaseComponent {
         rounded : PropTypes.bool,
         large : PropTypes.bool,
         small : PropTypes.bool,
-        inputButton : PropTypes.bool
+        inputButton : PropTypes.bool,
+        onPress : PropTypes.func
     }
 
     getInitialStyle() {

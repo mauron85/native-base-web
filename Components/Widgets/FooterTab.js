@@ -8,7 +8,7 @@ import {View} from 'react-native';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
 import computeProps from '../../Utils/computeProps';
 
-export default class Footer extends NativeBaseComponent {
+export default class FooterTab extends NativeBaseComponent {
 
     static propTypes = {
         style : PropTypes.object
@@ -16,11 +16,10 @@ export default class Footer extends NativeBaseComponent {
 
     getInitialStyle() {
         return {
+            flex: 1,
+            alignSelf: 'stretch',
             flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: this.getTheme().footerHeight,
-            paddingBottom: this.getTheme().footerPaddingBottom,
+            justifyContent: 'space-between',
             backgroundColor: this.getTheme().footerDefaultBg
         }
     }

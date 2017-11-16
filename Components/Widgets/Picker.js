@@ -39,11 +39,6 @@ export default class PickerNB extends NativeBaseComponent {
 
 }
 
-PickerNB.Item = React.createClass({
-
-    render: function() {
-        return(
-            <Picker.Item {...typeof this.props === "function" ? this.props() : this.props}/>
-        );
-    }
-});
+PickerNB.Item = (props) => (
+    <Picker.Item {...typeof props === "function" ? props() : props}/>
+);
