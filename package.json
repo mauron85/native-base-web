@@ -40,7 +40,7 @@
   "peerDependencies": {
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
-    "react-native-web-extended": "0.0.7"
+    "react-native-web": "0.1.13"
   },
   "rnpm": {
     "assets": [

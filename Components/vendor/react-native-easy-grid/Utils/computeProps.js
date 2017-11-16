@@ -1,6 +1,6 @@
 var React = require('react');
 
-var ReactNativePropRegistry = require('react-native-web-extended/dist/modules/ReactNativePropRegistry');
+var ReactNativePropRegistry = require('react-native-web').ReactNativePropRegistry;
 
 module.exports = function(incomingProps, defaultProps) {
 
