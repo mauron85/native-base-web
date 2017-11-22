@@ -10,12 +10,6 @@ import Text from '../Widgets/Text';
 import View from '../Widgets/View';
 import computeProps from '../../Utils/computeProps';
 
-const styles = {
-	container: {
-		alignSelf: 'right'
-	}
-};
-
 export default class Right extends NativeBaseComponent {
 
 	static propTypes = {
@@ -25,7 +19,7 @@ export default class Right extends NativeBaseComponent {
 	prepareRootProps() {
 
 		var type = {
-			flex: 1,
+			// flex: 1,
 			alignSelf: 'center',
 			alignItems: 'flex-end',
 		}
@@ -40,7 +34,9 @@ export default class Right extends NativeBaseComponent {
 
 	render() {
 		return(
-			<View style={styles.container}><Text {...this.prepareRootProps()}>{this.props.children}</Text></View>
+			<View {...this.prepareRootProps()}>
+				<Text>{this.props.children}</Text>
+			</View>
 			);
 	}
 }
